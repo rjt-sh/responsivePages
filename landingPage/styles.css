@@ -12,11 +12,15 @@ body {
 
 .navbar {
   display: flex;
+  /* position: sticky;
+  top: 0;
+  left: 0;
+  right: 0; */
   justify-content: space-between;
   align-items: center;
-  background-color: #550806;
+  background-color: #000000;
   color: white;
-  max-height: 50px;
+  max-height: 55px;
 }
 
 .brand-title {
@@ -38,10 +42,11 @@ body {
   margin: 0 1rem;
   padding: 1rem;
   display: block;
+  letter-spacing: 1px;
 }
 
 .nav-links li:hover {
-  background-color: rgb(141, 102, 102);
+  background-color: rgb(80, 69, 69);
 }
 
 .nav-links li a:hover {
@@ -56,6 +61,45 @@ body {
   display: none;
 }
 
+.main-content {
+  background-image: url("images/snow.jpg");
+  background-position: center;
+  background-size: cover;
+  /* filter: blur(0.2px); */
+  height: 95vh;
+}
+
+.main-text {
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  font-size: 2rem;
+}
+
+.footer-main {
+  display: flex;
+  background-color: #e7eeeeee;
+  min-height: 60px;
+}
+
+.footer-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.brand-image {
+  height: 50px;
+  margin: 0.5rem 2rem;
+}
+
+.copy-msg {
+  display: flex;
+  justify-content: center;
+  background-color: #000000ee;
+  color: white;
+}
+
 /* Mobile view */
 @media (max-width: 700px) {
   .toggle-button {
@@ -65,7 +109,7 @@ body {
   .nav-links {
     display: none;
     width: 100%;
-    background-color: #550806;
+    background-color: #000000;
   }
 
   .navbar {
@@ -79,10 +123,30 @@ body {
   }
 
   .nav-links li a {
-    padding: 0.5rem 1rem;
+    margin: auto;
   }
 
   .nav-links.active {
     display: flex;
+  }
+
+  .main-text {
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    font-size: 2rem;
+  }
+
+  .brand-image {
+    height: 50px;
+    margin: 0.5rem 1rem;
+  }
+
+  .copy-msg {
+    display: flex;
+    justify-content: center;
+    background-color: #000000ee;
+    color: white;
+    font-size: 0.8rem;
   }
 }
