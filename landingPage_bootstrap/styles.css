@@ -1,0 +1,47 @@
+.navbar-collapse {
+  justify-content: end;
+}
+
+.carousel-inner {
+  max-height: 80vh;
+}
+
+.nav-link {
+  margin: 0.2rem 1.2rem;
+}
+
+.navbar-brand {
+  letter-spacing: 2px;
+}
+
+.price-tag {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.carousel {
+  margin-top: 2rem;
+}
+
+.container-lg {
+  padding: 2rem 0 0.5rem 0;
+}
+
+.footer {
+  background-color: black;
+  color: white;
+  margin: 0;
+  padding: 1rem 3rem;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+}
+
+.social-icons {
+  font-size: 2rem;
+  margin: 1rem 2rem;
+  color: aliceblue;
+}
