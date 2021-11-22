@@ -1,3 +1,365 @@
 body {
-  background-color: bisque;
+  background-color: rgb(235, 223, 206);
+  background-image: url("assets/bg-image.jpg");
+  box-sizing: border-box;
+}
+
+.wrapper {
+  overflow-x: hidden !important;
+}
+
+/* Navbar Styling */
+.navbar.navbar-dark {
+  background-color: #9b4545 !important;
+}
+.navbar-collapse {
+  justify-content: end;
+}
+
+.nav-link {
+  margin: 0.4rem 1.2rem;
+  color: #dfe8f0;
+  font-weight: bold;
+}
+
+.navbar-brand {
+  letter-spacing: 2px;
+  color: #dfe8f0;
+  font-size: 1.5rem;
+}
+
+/* Intro Section Styling */
+.intro-container {
+  display: flex;
+  background-image: linear-gradient(#9b4545, #ff8f8f);
+  justify-content: space-around;
+  align-items: center;
+  height: 65vh;
+}
+
+.intro-text {
+  margin: 1rem 3rem;
+  padding: 2rem;
+  color: #dfe8f0;
+}
+
+.intro-text h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.img-header {
+  margin: 2rem 3rem;
+}
+
+/* Info Section Styling */
+.info-container {
+  margin: 4rem 4rem;
+  background-image: linear-gradient(to right, #9b4545, #fd8484);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.info-img {
+  margin: 2rem 3rem;
+}
+
+.info-txt {
+  margin: 3rem 3rem;
+}
+
+.info-txt h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  color: #dfe8f0;
+}
+
+.info-txt p {
+  font-size: 1rem;
+  text-align: center;
+  color: #dfe8f0;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+/* Order Section Styling */
+.order-container {
+  margin: 2rem 4rem;
+  background-image: linear-gradient(to right, #ff8f8f, #9b4545);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.order-form {
+  margin: 3rem 2rem;
+  text-align: center;
+  color: #dfe8f0;
+}
+
+.order-form h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  color: #dfe8f0;
+  margin-bottom: 1.2rem;
+}
+
+/* Details Section */
+.details-container {
+  margin: 4rem 0rem 0rem 0rem;
+  padding: 1rem 0rem 2.2rem 0rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  background-image: linear-gradient(to bottom, #ff8f8f, #9b4545);
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.list-title {
+  margin: 3rem 0rem 1.5rem 0rem;
+}
+
+.list-title h3 {
+  color: #dfe8f0;
+  font-size: 1.5rem;
+}
+
+.list a {
+  text-decoration: none;
+  color: #dfe8f0;
+  font-weight: bold;
+  margin: 0.4rem 0rem;
+}
+
+/* Footer Section */
+.footer-container {
+  display: flex;
+  background-color: #9b4545;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem 0rem;
+}
+
+.tnc {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer-container h4 {
+  color: #dfe8f0;
+  font-size: 1.15rem;
+}
+
+.tnc h4 {
+  margin-left: 2rem;
+}
+
+.tnc a {
+  text-decoration: none;
+}
+
+.social i {
+  font-size: 2rem;
+  color: #dfe8f0;
+  margin-left: 2rem;
+}
+/* Media Queries */
+/* 1st breakpoint at 1300PX */
+@media only screen and (max-width: 1300px) {
+  .intro-text h1 {
+    font-size: 2.5rem;
+    margin-top: 1.5rem;
+  }
+
+  .info-container {
+    margin: 3rem 0rem;
+    background-image: linear-gradient(to right, #9b4545, #fd8484);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .order-container {
+    margin: 2rem 0rem;
+    background-image: linear-gradient(to right, #ff8f8f, #9b4545);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
+
+/* 2nd Breakpoint @ 1120 PX */
+@media only screen and (max-width: 1120px) {
+  body {
+    background-color: red;
+  }
+
+  /* Intro Styling */
+  .intro-container {
+    display: flex;
+    flex-direction: column;
+    background-color: #b86666;
+    justify-content: space-around;
+    align-items: center;
+    height: 79vh;
+  }
+
+  .intro-text {
+    margin: 1rem 2rem 0.5rem 2rem;
+    padding: 1rem;
+    color: aliceblue;
+  }
+
+  .intro-text h1 {
+    font-size: 2.2rem;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .img-header {
+    margin: 0.5rem 2rem;
+  }
+
+  /* Info Section */
+
+  .info-container {
+    margin: 3rem 0rem;
+    background-image: linear-gradient(to right, #9b4545, #fd8484);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .info-img {
+    margin: 2rem 1.5rem;
+  }
+
+  .info-txt {
+    margin: 1.5rem 2.5rem;
+  }
+
+  .info-txt h1 {
+    font-size: 2rem;
+    text-align: center;
+    color: #dfe8f0;
+  }
+
+  /* Order Section */
+  .order-form h1 {
+    font-size: 2rem;
+  }
+
+  /* Footer Section */
+  .footer-container h4 {
+    color: #dfe8f0;
+    font-size: 1rem;
+  }
+
+  .social i {
+    font-size: 1.75rem;
+    margin-left: 2rem;
+  }
+}
+
+/* 3rd Breakpoint @ 1040px */
+@media only screen and (max-width: 1040px) {
+  body {
+    background-color: blue;
+  }
+
+  .intro-text h1 {
+    font-size: 2rem;
+  }
+
+  /* Info Section Styling */
+  .info-container {
+    margin: 2rem 0rem;
+    background-image: linear-gradient(to right, #9b4545, #fd8484);
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .info-img {
+    margin: 0rem 1.5rem 1rem 1.5rem;
+  }
+
+  .info-txt {
+    margin: 1.5rem 4rem;
+  }
+
+  /* Order Section Styling */
+  .order-container {
+    margin: 2rem 0rem;
+    background-image: linear-gradient(to right, #9b4545, #fd8484);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .order-img {
+    margin: 0rem 1rem 1rem 1rem;
+  }
+
+  /* Footer Section */
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    background-color: #9b4545;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem 0rem;
+  }
+
+  .footer-container h4 {
+    font-size: 1.1rem;
+    margin-left: 1.5rem;
+  }
+
+  .social i {
+    font-size: 1.6rem;
+    margin-left: 1.2rem;
+  }
+}
+
+/* 4th Breakpoint at PX */
+@media only screen and (max-width: 750px) {
+  body {
+    background-color: greenyellow;
+  }
+
+  .list-title h3 {
+    font-size: 1.1rem;
+  }
+
+  .list a {
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin: 0.4rem 0rem;
+  }
+
+  /* Footer Style */
+  .footer-container h4 {
+    font-size: 1rem;
+    margin-left: 1.4rem;
+  }
+
+  .social i {
+    font-size: 1.2rem;
+    margin-left: 1.2rem;
+  }
 }

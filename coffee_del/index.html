@@ -4,10 +4,218 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css"
+    />
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="styles.css" />
-    <title>Document</title>
+    <link rel="icon" href="assets/favicon.png" />
+    <title>Your Favourite Coffee Shop</title>
   </head>
   <body>
-    <h1>Hello</h1>
+    <div class="wrapper">
+    <!-- NAVBAR Start -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Brand</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link" aria-current="page" href="#coffee-info"
+              >Our Coffees</a
+            >
+            <a class="nav-link" href="#coffee-order">Order Online</a>
+            <a class="nav-link" href="#coffee-connect">Coffee Club</a>
+            <a class="nav-link" href="#coffee-connect">Contact Us</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- NAVBAR Ends -->
+
+    <!-- Intro Section -->
+    <section class="intro" id="coffee-intro">
+      <div class="intro-container">
+        <div class="intro-text">
+          <h1>
+            Our Christmas <br />
+            crackers are back.
+          </h1>
+        </div>
+        <div class="intro-img">
+          <img class="img-header" src="assets/intro3.png" alt="img" />
+        </div>
+      </div>
+    </section>
+    <!-- Intro Section Ends -->
+
+    <!-- Coffee Info Section -->
+    <section class="info" id="coffee-info">
+      <div class="info-container">
+        <div class="info-img">
+          <img class="img-info" src="assets/infoImg.png" alt="img" />
+        </div>
+        <div class="info-txt">
+          <h1>Try out our latest drinks this festive season</h1>
+          <p class="lead">
+            From classics like the Quality Shakes® The Purple One Latte to new
+            Quality Shakes® Toffee Penny Latte, there are flavours for everyone
+            to get you all Christmassy. It's official. The most wonderful time
+            of the year is here. Don't miss out on all the fun.
+          </p>
+          <div class="btn-container">
+            <button type="button" class="btn btn-lg btn-outline-light">
+              Discover More
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Coffee Info Section Ends  -->
+
+    <!-- Order Online Section -->
+    <section class="order" id="coffee-order">
+      <div class="order-container">
+        <div class="order-form">
+          <h1>Get your coffee delivered at doorstep</h1>
+          <form action="">
+            <div class="mb-2">
+              <label for="name" class="form-label">Full Name</label>
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1">
+                  <i class="bi bi-person-fill"></i>
+                </span>
+              <input type="text" class="form-control" id="name" placeholder="John Doe">
+              </div>
+            </div>
+            <div class="mb-2">
+              <label for="email" class="form-label">Email address</label>
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1">
+                  <i class="bi bi-envelope-fill"></i>
+                </span>
+              <input type="email" class="form-control" id="email" placeholder="name@example.com">
+              </div>
+            </div>
+            <div class="mb-2">
+              <label for="type" class="form-label">Coffee Type</label>
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1">
+                  <i class="bi bi-cup-fill"></i>
+                </span>
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>Choose Product Type</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </div>
+            </div>
+            <div class="mb-2">
+              <label for="address" class="form-label">Delivery Address</label>
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1">
+                  <i class="bi bi-house-fill"></i>
+                </span>
+              <input type="text" class="form-control" id="address" placeholder="1,Main Street">
+              </div>
+            </div>
+            <button type="submit" class="btn btn btn-lg btn-outline-light">Place Order</button>
+          </form>
+          </div>
+          <div class="order-img">
+            <img class="img-order" src="assets/kof.png" alt="img" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Order Online Section Ends -->
+
+    <!-- Details Section -->
+    <section class="details" id="coffee-connect">
+      <div class="details-container">
+        <div class="list about-list">
+          <div class="list-title">
+          <h3>About Us</h3>
+        </div>
+        <a href="#">Our Coffees</a>
+        <a href="#">Our Story</a>
+        <a href="#">Our Foundation</a>
+        <a href="#">Book Awards</a>
+        <a href="#">Store Updates</a>
+        <a href="#">Download App</a>
+        </div>
+        <div class="list diet-list">
+          <div class="list-title">
+          <h3>Dietery Information</h3>
+        </div>
+        <a href="#">Nutrition</a>
+        <a href="#">Allergens</a>
+        <a href="#">Sourcing</a>
+        <a href="#">Ready to Drink</a>
+        <a href="#">Branded Products</a>
+        </div>
+        <div class="list contact-list">
+          <div class="list-title">
+          <h3>Contact Us</h3>
+        </div>
+        <a href="#">Gift Cards</a>
+        <a href="#">Business Partners</a>
+        <a href="#">FAQs</a>
+        <a href="#">Contact Us</a>
+        <a href="#">Press</a>
+        <a href="#">Careers</a>
+        <a href="#">Report</a>
+
+        </div>
+      </div>
+    </section>
+    <!-- Details Section -->
+
+    <!-- Footer Section -->
+    <section class="footer">
+      <div class="footer-container">
+        <div class="tnc">
+          <a href=""><h4>Privacy Policy</h4></a>
+          <a href=""><h4>Cookie Policy</h4></a>
+          <a href=""><h4>Terms and Conditions</h4></a>
+        </div>
+        <div class="copyright">
+          <h4>© 2021 All rights reserved</h4>
+        </div>
+        <div class="social">
+          <a href=""><i class="bi bi-facebook"></i></a>
+          <a href=""><i class="bi bi-twitter"></i></a>
+          <a href=""><i class="bi bi-youtube"></i></a>
+          <a href=""><i class="bi bi-instagram"></i></a>
+        </div>
+      </div>
+    </section>
+    <!-- Footer Section Ends -->
+
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </div>
   </body>
 </html>
