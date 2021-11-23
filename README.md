@@ -1,2 +1,2 @@
 # responsivePages
-Responsive Web Page Design
+Responsive Web Pages 
